@@ -1,0 +1,2 @@
+# hyprland
+Hyprland Configuration
