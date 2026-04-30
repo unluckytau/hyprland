@@ -1,0 +1,24 @@
+# Window Setup
+width=600
+height=400
+location=center
+show=drun
+
+# Search Bar Behavior
+prompt=Search
+filter_rate=100
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_type=application/x-desktop
+
+# App Appearance
+hide_scroll=true
+allow_images=true
+show_icons=true
+icon_size=16
+
+# Seamless Look
+layer=overlay
+term=kitty
