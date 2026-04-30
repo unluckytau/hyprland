@@ -4,3 +4,5 @@
 
 ---
 
+**`Requires:`**
+1. [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
