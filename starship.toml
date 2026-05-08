@@ -83,13 +83,13 @@ style = 'italic fg:yellow'
 format = 'took [$duration]($style)'
 
 [palettes.gruvbox_material]
-bg0 = "#1D2021"
-fg0 = "#D4BE98"
-red = "#EA6962"
-green = "#A9B665"
-yellow = "#D8A657"
-blue = "#7DAEA3"
-purple = "#D3869B"
-aqua = "#89B482"
-orange = "#E78A4E"
-gray = "#928374"
+bg0 = "#141415"
+fg0 = "#CDCDCD"
+red = "#D8647E"
+green = "#7FA563"
+yellow = "#F3bE7C"
+blue = "#6E94B2"
+purple = "#90A0B5"
+aqua = "#B4D4CF"
+orange = "#E8B589"
+gray = "#878787"
