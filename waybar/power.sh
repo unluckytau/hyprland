@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-options="󰤄 Suspend\n󰜉 Restart\n󰐥 Power Off"
+options="󰤄 Suspend\n Restart\n󰐥 Power Off"
 
 chosen=$(echo -e "$options" | wofi --dmenu --width 300 --height 125 --cache-file /dev/null --prompt "Power Menu")
 
