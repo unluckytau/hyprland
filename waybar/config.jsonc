@@ -1,10 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "width": 1920,
+    "width": 1915,
     "height": 30,
-    "margin-top": 4,
-    "margin-bottom": 1,
+    "margin-top": 8,
+    "margin-bottom": 0,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["tray", "network", "pulseaudio", "battery"],
