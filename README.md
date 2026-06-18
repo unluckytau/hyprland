@@ -4,5 +4,13 @@
 
 ---
 
+<p align="center">
+    <img src="assets/view.png" alt="Preview">
+</p>
+
+---
+
 **`Requires:`**
-1. [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+
+- SFPro Rounded Font
+- Nerd Fonts
