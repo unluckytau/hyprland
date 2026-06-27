@@ -1,7 +1,7 @@
 {
   "settingsVersion": 59,
   "bar": {
-    "barType": "framed",
+    "barType": "simple",
     "position": "top",
     "monitors": [],
     "density": "compact",
@@ -10,16 +10,16 @@
     "capsuleOpacity": 1,
     "capsuleColorKey": "none",
     "widgetSpacing": 7,
-    "contentPadding": 5,
+    "contentPadding": 6,
     "fontScale": 1.1,
     "enableExclusionZoneInset": false,
-    "backgroundOpacity": 1,
-    "useSeparateOpacity": false,
+    "backgroundOpacity": 0,
+    "useSeparateOpacity": true,
     "marginVertical": 4,
     "marginHorizontal": 4,
     "frameThickness": 8,
     "frameRadius": 12,
-    "outerCorners": true,
+    "outerCorners": false,
     "hideOnOverview": false,
     "displayMode": "always_visible",
     "autoHideDelay": 500,
@@ -105,18 +105,18 @@
     "screenOverrides": []
   },
   "general": {
-    "avatarImage": "/home/tau/.face",
+    "avatarImage": "/home/tau/.nixos/images/kimie_.png",
     "dimmerOpacity": 0.2,
     "showScreenCorners": false,
     "forceBlackScreenCorners": false,
     "scaleRatio": 1,
-    "radiusRatio": 1.2,
+    "radiusRatio": 1,
     "iRadiusRatio": 1,
     "boxRadiusRatio": 1,
     "screenRadiusRatio": 1,
     "animationSpeed": 2,
-    "animationDisabled": false,
-    "compactLockScreen": false,
+    "animationDisabled": true,
+    "compactLockScreen": true,
     "lockScreenAnimations": false,
     "lockOnSuspend": true,
     "showSessionButtonsOnLockScreen": true,
@@ -131,12 +131,12 @@
     "allowPanelsOnScreenWithoutBar": true,
     "showChangelogOnStartup": false,
     "telemetryEnabled": false,
-    "enableLockScreenCountdown": true,
+    "enableLockScreenCountdown": false,
     "lockScreenCountdownDuration": 10000,
     "autoStartAuth": false,
     "allowPasswordWithFprintd": false,
     "clockStyle": "custom",
-    "clockFormat": "hh\\nmm",
+    "clockFormat": "ddd MMM d  h:mm AP",
     "passwordChars": false,
     "lockScreenMonitors": [],
     "lockScreenBlur": 0,
@@ -170,7 +170,7 @@
   },
   "ui": {
     "fontDefault": "SF Pro Rounded",
-    "fontFixed": "GeistMono NF",
+    "fontFixed": "GeistMono NFP Black",
     "fontDefaultScale": 1,
     "fontFixedScale": 1,
     "tooltipsEnabled": false,
@@ -190,7 +190,7 @@
     "useFahrenheit": false,
     "use12hourFormat": false,
     "showWeekNumberInCalendar": false,
-    "showCalendarEvents": true,
+    "showCalendarEvents": false,
     "showCalendarWeather": true,
     "analogClockInCalendar": false,
     "firstDayOfWeek": -1,
@@ -217,11 +217,11 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": false,
-    "directory": "/home/tau/hyprland/hypr/assets",
+    "directory": "/home/tau/.nixos/images",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
-    "viewMode": "recursive",
+    "viewMode": "browse",
     "setWallpaperOnAllMonitors": true,
     "linkLightAndDarkWallpapers": true,
     "fillMode": "crop",
@@ -233,7 +233,7 @@
     "randomIntervalSec": 300,
     "transitionDuration": 1500,
     "transitionType": [
-      "honeycomb"
+      "disc"
     ],
     "skipStartupTransition": false,
     "transitionEdgeSmoothness": 0.05,
@@ -268,6 +268,48 @@
         ],
         "path": "/home/tau/hyprland/hypr/assets/7.jpg",
         "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "content",
+        "paletteColors": [
+          "#cfc6b2",
+          "#ccc6bc",
+          "#c4c8b9",
+          "#ffb4ab"
+        ],
+        "path": "/home/tau/.nixos/etc/tau.png",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "content",
+        "paletteColors": [
+          "#cfc6b2",
+          "#ccc6bc",
+          "#c4c8b9",
+          "#ffb4ab"
+        ],
+        "path": "/home/tau/.nixos/images/tau.png",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "muted",
+        "paletteColors": [
+          "#b3a298",
+          "#a59c8d",
+          "#a3a18f",
+          "#fd4663"
+        ],
+        "path": "/home/tau/.nixos/images/knight-sit.png",
+        "useWallpaperColors": true
       }
     ]
   },
@@ -282,7 +324,7 @@
     "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
     "position": "center",
     "pinnedApps": [],
-    "sortByMostUsed": true,
+    "sortByMostUsed": false,
     "terminalCommand": "alacritty -e",
     "customLaunchPrefixEnabled": false,
     "customLaunchPrefix": "",
@@ -296,7 +338,7 @@
     "ignoreMouseInput": false,
     "screenshotAnnotationTool": "",
     "overviewLayer": true,
-    "density": "default"
+    "density": "compact"
   },
   "controlCenter": {
     "position": "close_to_bar_button",
@@ -424,7 +466,7 @@
     "bluetoothAutoConnect": true
   },
   "sessionMenu": {
-    "enableCountdown": true,
+    "enableCountdown": false,
     "countdownDuration": 10000,
     "position": "center",
     "showHeader": true,
@@ -436,50 +478,50 @@
         "action": "lock",
         "command": "",
         "countdownEnabled": true,
-        "enabled": true,
-        "keybind": "1"
+        "enabled": false,
+        "keybind": ""
       },
       {
         "action": "suspend",
         "command": "",
         "countdownEnabled": true,
         "enabled": true,
-        "keybind": "2"
+        "keybind": "1"
       },
       {
         "action": "hibernate",
         "command": "",
         "countdownEnabled": true,
-        "enabled": true,
-        "keybind": "3"
+        "enabled": false,
+        "keybind": ""
       },
       {
         "action": "reboot",
         "command": "",
         "countdownEnabled": true,
         "enabled": true,
-        "keybind": "4"
+        "keybind": "2"
       },
       {
         "action": "logout",
         "command": "",
         "countdownEnabled": true,
-        "enabled": true,
-        "keybind": "5"
+        "enabled": false,
+        "keybind": ""
       },
       {
         "action": "shutdown",
         "command": "",
         "countdownEnabled": true,
         "enabled": true,
-        "keybind": "6"
+        "keybind": "3"
       },
       {
         "action": "rebootToUefi",
         "command": "",
         "countdownEnabled": true,
-        "enabled": true,
-        "keybind": "7"
+        "enabled": false,
+        "keybind": ""
       },
       {
         "action": "userspaceReboot",
@@ -524,13 +566,14 @@
   "osd": {
     "enabled": true,
     "location": "top_right",
-    "autoHideMs": 2000,
+    "autoHideMs": 1500,
     "overlayLayer": true,
     "backgroundOpacity": 1,
     "enabledTypes": [
       0,
       1,
-      2
+      2,
+      3
     ],
     "monitors": []
   },
@@ -589,7 +632,7 @@
   },
   "plugins": {
     "autoUpdate": false,
-    "notifyUpdates": true
+    "notifyUpdates": false
   },
   "idle": {
     "enabled": false,
